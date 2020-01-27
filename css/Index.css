@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+   
+}
+
+body{
+    background: rgb(106,140,175);
+    background: linear-gradient(90deg, rgba(106,140,175,1) 0%, rgba(117,183,158,1) 50%, rgba(167,233,175,1) 100%);
+    color: #ffffff;
+    font-size: 16px;
+    background-size: cover;/*Escala la imagen al mayor tamaño posible sin estirarla. Si las proporciones de la imagen difieren de las del elemento, es recortada vertical u horizontalmente para que no quede un espacio vacío.*/
+}
+
+.wrap{
+   
+
+    
+    width: 90%;
+    max-width: 10000px;/*un ancho máximo de mil pixeles*/
+    margin:auto; /*centrar el reloj en pantalla */    
+ 
+}
+
+.widget{ /*tenemos la fecha y la hora*/
+    width: 40%;
+    margin: 2em; /*32px*/
+    
+}
+
+.widget p{
+    display: inline-block; /* se acomoda los dias y la hora*/
+    line-height: 1em; /*salto de linea de 1em*/
+}
+
+/*--CAJA DE LA FECHA--*/
+
+.fecha{
+    font-family: 'Solway' , serif;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.3125rem; /*5px*/
+    background: rgba(0, 0, 0, .5); /*los colores rgba tienen tranparencias en este caso es de 0.5*/
+    padding: 20px;
+    width: 100%;
+    border-radius: 25px 25px 0 0 ; 
+}
+
+/*--CAJA DEL RELOJ--*/
+
+.reloj{
+    font-family: 'Solway', serif;
+    width: 100%;
+    padding: 20px;
+    font-size: 4em;
+    text-align: center;
+    background: rgba( 0, 0, 0,.5);
+    border-radius: 0 0 25px 25px ;
+}
+
+.reloj .caja-segundos{
+    display: inline-block; /* Coloca .caja-segundos al lado de la caja reloj*/
+
+}
+
+.reloj .segundos, .reloj .ampm{
+    font-size: 2rem;
+    display: block; /*cada una ocupa su linea*/
+}
